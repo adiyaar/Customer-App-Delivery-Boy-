@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+<!--    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:background="@color/header_color">-->
+<!--
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Seller: WH-HOUSE Store"
+        android:textSize="14sp" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/navigateButtonVendor"
+        style="@style/MyButton.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:drawableStart="@drawable/ic_navigation_black"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Navigate" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/contactButtonVendor"
+        style="@style/MyButton.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:drawableStart="@drawable/ic_phone_black"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Contact" />
+
+-->
+
+</LinearLayout>

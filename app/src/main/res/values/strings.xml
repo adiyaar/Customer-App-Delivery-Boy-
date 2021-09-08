@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Delivery Boy</string>
+
+    <string name="google_api_app_id" translatable="false">YOUR_GOOGLE_API_APP_ID</string>
+
+    <!--Loading Dialog-->
+    <string name="loading">Loading</string>
+    <string name="please_wait">Please Wait…</string>
+
+    <!--OTP Dialog-->
+    <string name="validate_otp">Validate OTP</string>
+    <string name="otp_msg_start">A One Time Password has been send to </string>
+    <string name="otp_msg_end">. Please enter the otp below to verify your login.</string>
+    <string name="otp_code">OTP Code</string>
+    <string name="resend">Resend</string>
+    <string name="submit">Submit</string>
+
+    <!--Login Screen-->
+    <string name="title_login"> Login </string>
+    <string name="wellcome">Welcome to delivery boy application. This application give a functionality which builds a link between Admin and the Delivery boy.</string>
+    <string name="user_pin_code">User Pin code</string>
+    <string name="login">Login</string>
+    <string name="invalid_pincode">Invalid or empty pin code!</string>
+
+    <!--MainScreen-->
+    <string name="online">ONLINE</string>
+    <string name="offline">OFFLINE</string>
+    <string name="tracking_enabled_notif">Note You are being tracking.</string>
+    <string name="gps_warning">Please make sure your GSP is enabled</string>
+    <string name="click_again_to_close">Click again to close</string>
+    <string name="gps_enabled">GPS tracking enabled</string>
+    <string name="offline_go_online">You are offline \nPlease Go Online.</string>
+    <string name="empty_records">No Record Found \nYou don\'t have any order</string>
+
+    <!--Navigation Headings-->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_history">History</string>
+    <string name="title_settings">Settings</string>
+
+    <!--Settings Screen-->
+    <string name="floating_cash">Floating Cash</string>
+    <string name="account_info">Account Info</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="history">History</string>
+    <string name="legal">Legal</string>
+    <string name="logout">Logout</string>
+
+    <!--Order List Item-->
+    <string name="call_to_customer">Call to Customer</string>
+    <string name="status">Status</string>
+    <string name="placed_on">Placed On</string>
+    <string name="order_id">Order Id</string>
+    <string name="amount">Amount</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="details">Details</string>
+
+    <!--Order Detail Page-->
+    <string name="order_details">Order Details</string>
+    <string name="no_of_products">No. of Products</string>
+    <string name="total_price">Total Price</string>
+    <string name="order_status">Order Status</string>
+    <string name="order_date">Order Date</string>
+    <string name="order_time">Order Time</string>
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="shipping_method">Shipping Method</string>
+    <string name="shipping_price">Shipping Price</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="tax">Tax</string>
+    <string name="shipping">Shipping</string>
+    <string name="discount">Discount</string>
+    <string name="total">Total</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="customer_comments">Customer Comments</string>
+    <string name="a_detailed_comments_from_customer">Detailed comment.</string>
+    <string name="admin_comments">Admin Comments</string>
+    <string name="order_is_dispatched">Order is Dispatched</string>
+    <string name="deliver">Deliver</string>
+
+    <!--logout Dialog-->
+    <string name="logoutString">Are your sure you want to logout?</string>
+    <string name="alert">Alert!</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Comments Dialog-->
+    <string name="commentsString">Please submit your reviews about the behaviour of customer.</string>
+    <string name="submit_comment">Submit Comment</string>
+    <string name="enter_your_comments_here">Enter your comments here.</string>
+    <string name="dismiss">Dismiss</string>
+
+
+</resources>
