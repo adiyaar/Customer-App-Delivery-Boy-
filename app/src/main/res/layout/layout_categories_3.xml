@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/category_card"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_margin="3dp"
+    android:layout_centerInParent="true"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="70dp"
+        android:layout_height="85dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:text="@string/title"
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textColor="@color/textColorPrimary"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:text="2 products"
+        android:id="@+id/category_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:gravity="center_horizontal" />
+
+
+</LinearLayout>

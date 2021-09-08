@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Maps.MapActivity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_button_blue"
+        android:text="@string/set_current_location"
+        android:textColor="@color/white"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/submitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:tint="@color/red"
+        android:layout_margin="@dimen/margin_10"
+        android:src="@drawable/close"
+        android:id="@+id/closeBtn"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/marker"
+        android:text="TextView" />
+
+
+    <EditText
+        android:id="@+id/place_search"
+        android:hint="@string/actionSearch"
+        android:inputType="textPostalAddress"
+        android:padding="15dp"
+        android:layout_below="@+id/closeBtn"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/places_ic_search"
+        android:background="@color/white"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/places_recycler_view"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:layout_below="@+id/place_search"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

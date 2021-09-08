@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/layoutBackgroundLight">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:background="@color/windowBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/billing_address"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColorSecondaryDark" />
+
+                        <ImageButton
+                            android:visibility="gone"
+                            android:id="@+id/checkout_edit_billing"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_edit"
+                            android:tint="@color/colorAccent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:background="@android:color/transparent" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/billing_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/full_name"
+                            android:textSize="14sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/billing_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/city"
+                            android:textSize="14sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/billing_street"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/address"
+                            android:textSize="14sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:background="@color/windowBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shipping_address"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColorSecondaryDark" />
+
+                        <ImageButton
+                            android:visibility="gone"
+                            android:id="@+id/checkout_edit_shipping"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_edit"
+                            android:tint="@color/colorAccent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:background="@android:color/transparent" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/shipping_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/full_name"
+                            android:textSize="14sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/shipping_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/city"
+                            android:textSize="14sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/shipping_street"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/address"
+                            android:textSize="14sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:background="@color/windowBackgroundLight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shipping_method"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColorSecondaryDark" />
+
+                        <ImageButton
+                            android:visibility="gone"
+                            android:id="@+id/checkout_edit_shipping_method"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_edit"
+                            android:tint="@color/colorAccent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:background="@android:color/transparent" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/shipping_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="@string/shipping_method"
+                        android:textSize="14sp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColorSecondary" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/products"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/checkout_items_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtotal"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/subtotal"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_subtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$000.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/tax"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/checkout_tax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="$00.0"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColorSecondary"
+                            android:textAlignment="textEnd"
+                            android:gravity="end"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="5dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/packing_charge"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_packing_charges"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$00.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="5dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/shipping"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_shipping"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$00.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="5dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/discount"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$00.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="5dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/total"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$000.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/checkout_coupons_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/checkout_coupon_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="@string/apply"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:layout_marginStart="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_corners_button_green" />
+
+                    <!--<EditText
+                        android:id="@+id/checkout_coupon_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:hint="@string/coupon_code"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:textColorHint="@color/textColorSecondaryLight"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:drawablePadding="15dp"
+                        android:gravity="start|center_vertical"
+                        android:drawableStart="@drawable/ic_credit_card"
+                        android:layout_toStartOf="@+id/checkout_coupon_btn"
+                        android:background="@drawable/rounded_corners_edittext_light" />-->
+
+                    <EditText
+                        android:id="@+id/checkout_coupon_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:hint="@string/coupon_code"
+                        android:inputType="textNoSuggestions"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/checkout_coupon_btn"
+                        android:background="@color/windowBackgroundLight" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/demo_coupons_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_coupons"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:clickable="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorAccentDark" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="15dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_notes"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <EditText
+                        android:id="@+id/checkout_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:minLines="3"
+                        android:textSize="14sp"
+                        android:hint="@string/order_notes"
+                        android:padding="5dp"
+                        android:textAlignment="viewStart"
+                        android:gravity="start|top"
+                        android:textColor="@color/textColorSecondary"
+                        android:background="@color/white" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:textSize="16sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/windowBackgroundLight"
+                android:text="@string/payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_method"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="10dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/ic_chevron_down"
+                android:textColor="@color/textColorSecondaryDark"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_details"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <com.braintreepayments.cardform.view.SupportedCardTypesView
+                                android:id="@+id/supported_card_types"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/card_number"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+                            <EditText
+                                android:id="@+id/checkout_card_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/input_field_height"
+                                android:layout_marginTop="5dp"
+                                android:drawablePadding="15dp"
+                                android:drawableStart="@drawable/ic_credit_card"
+                                android:gravity="start|center_vertical"
+                                android:hint="@string/card_number"
+                                android:inputType="number"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondaryLight"
+                                android:background="@drawable/rounded_corners_edittext_light" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/card_cvv"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+                            <EditText
+                                android:id="@+id/checkout_card_cvv"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/input_field_height"
+                                android:layout_marginTop="5dp"
+                                android:drawablePadding="15dp"
+                                android:drawableStart="@drawable/ic_credit_card"
+                                android:gravity="start|center_vertical"
+                                android:hint="@string/card_cvv"
+                                android:inputType="number"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondaryLight"
+                                android:background="@drawable/rounded_corners_edittext_light" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/card_expiry"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+                            <EditText
+                                android:id="@+id/checkout_card_expiry"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/input_field_height"
+                                android:layout_marginTop="5dp"
+                                android:drawableEnd="@drawable/ic_chevron_down"
+                                android:drawableStart="@drawable/ic_calendar"
+                                android:drawablePadding="15dp"
+                                android:gravity="start|center_vertical"
+                                android:hint="@string/card_expiry"
+                                android:inputType="none"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondaryLight"
+                                android:background="@drawable/rounded_corners_edittext_light"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/payment_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_details"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/full_name"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+                            <EditText
+                                android:id="@+id/payment_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/input_field_height"
+                                android:layout_marginTop="5dp"
+                                android:drawablePadding="15dp"
+                                android:drawableStart="@drawable/ic_person"
+                                android:gravity="start|center_vertical"
+                                android:hint="@string/full_name"
+                                android:inputType="text"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondaryLight"
+                                android:background="@drawable/rounded_corners_edittext_light" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/email_address"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+                            <EditText
+                                android:id="@+id/payment_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/input_field_height"
+                                android:layout_marginTop="5dp"
+                                android:drawablePadding="15dp"
+                                android:drawableStart="@drawable/ic_email"
+                                android:gravity="start|center_vertical"
+                                android:hint="@string/email_address"
+                                android:inputType="textEmailAddress"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondaryLight"
+                                android:background="@drawable/rounded_corners_edittext_light" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/contact_no"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+                            <EditText
+                                android:id="@+id/payment_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/input_field_height"
+                                android:layout_marginTop="5dp"
+                                android:drawablePadding="15dp"
+                                android:drawableStart="@drawable/ic_phone_android"
+                                android:gravity="start|center_vertical"
+                                android:hint="@string/contact_no"
+                                android:inputType="phone"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondaryLight"
+                                android:background="@drawable/rounded_corners_edittext_light" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/checkout_payment_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text="@string/apply"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:textStyle="italic|bold"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/rounded_corners_button_blue" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/checkout_paypal_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="PayPal"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corners_button_blue" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/checkout_cancel_btn"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/checkout_order_btn"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:text="@string/btn_continue"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@color/colorAccentGrey" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

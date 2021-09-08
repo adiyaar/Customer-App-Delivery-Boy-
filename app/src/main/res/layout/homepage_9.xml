@@ -1,0 +1,117 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/windowBackground"
+        app:elevation="0dp"
+        app:layout_behavior="com.themescoder.androidstore.customs.AppBarFlingScrollBehavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:id="@+id/bannerFrameHome9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmerFrame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha=".8"
+                        android:visibility="gone"
+                        app:shimmer_duration="900">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/placeholder" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_margin="12dp"
+                    android:id="@+id/home9_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/windowBackground" />
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    style="@style/MyCustomTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:tabBackground="@color/white"
+                    app:tabIndicatorColor="@color/textColorSecondaryDark"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/textColorSecondaryDark"
+                    app:tabTextColor="@color/textColorSecondaryLight" />
+
+                <com.themescoder.androidstore.customs.CustomViewPager
+                    android:id="@+id/myViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/windowBackground" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/allproducts_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:drawableStart="@drawable/ic_list"
+            android:drawableLeft="@drawable/ic_list"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/iconsLight"
+            android:text="All Products"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="18sp" />
+
+
+        <FrameLayout
+            android:layout_below="@id/allproducts_header"
+            android:id="@+id/home9_products_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/windowBackground"
+            android:orientation="vertical" />
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

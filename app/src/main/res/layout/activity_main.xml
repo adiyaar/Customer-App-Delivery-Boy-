@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/myToolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/main_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/settingsFabBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:src="@drawable/ic_settings"
+                    android:tint="@color/white" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomNavigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:theme="@style/BottomNavigationTheme"
+                    app:menu="@menu/bottomnavigaiotn_menu" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/main_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:theme="@style/MyNavigationDrawer">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drawer_header_height"
+                    android:background="?attr/colorPrimaryDark">
+
+                    <ImageView
+                        android:id="@+id/drawer_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha=".3"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icons_stripe"
+                        android:tint="?attr/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="0dp">
+
+                        <com.themescoder.androidstore.customs.CircularImageView
+                            android:id="@+id/drawer_profile_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            app:border_color="@color/white"
+                            app:border_overlay="true"
+                            app:border_width="1dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/drawer_profile_welcome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/welcome"
+                                android:textColor="@color/windowBackgroundDark"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/drawer_profile_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/windowBackground"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/drawer_profile_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/windowBackgroundDark"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ExpandableListView
+                    android:id="@+id/main_drawer_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:choiceMode="singleChoice"
+                    android:divider="@color/dividerLight"
+                    android:dividerHeight="1dp"
+                    android:groupIndicator="@null"
+                    android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>

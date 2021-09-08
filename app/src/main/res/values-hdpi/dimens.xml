@@ -1,0 +1,137 @@
+<resources>
+
+    <dimen name="badge_text_size" >12sp</dimen>
+    <dimen name="image_slider_height">360dp</dimen>
+
+
+    <!--//////////////////////// HomePage ////////////////////////-->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_offset">10dp</dimen>
+
+    <dimen name="banner_height">200dp</dimen>
+    <dimen name="banner_title">30dp</dimen>
+    <dimen name="banner_subtitle">18dp</dimen>
+
+    <dimen name="card_radius">4dp</dimen>
+
+
+    <!--Youtube Activity-->
+
+    <dimen name="activity_detail_horizontal_margin">18dp</dimen>
+    <dimen name="image_height_youtube">200dp</dimen>
+    <dimen name="detail_margin">0dp</dimen>
+    <dimen name="image_height_wordpress">250dp</dimen>
+    <bool name="isTablet">false</bool>
+    <bool name="isWideTablet">false</bool>
+    <dimen name="highlight_height">200dp</dimen>
+
+    <dimen name="textsize_xxs">10sp</dimen>
+    <dimen name="textsize_xs">12sp</dimen>
+    <dimen name="textsize_s">14sp</dimen>
+    <dimen name="textsize_m">16sp</dimen>
+    <dimen name="textsize_l">18sp</dimen>
+    <dimen name="textsize_xl">20sp</dimen>
+    <dimen name="textsize_xxl">25sp</dimen>
+
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_s">6dp</dimen>
+    <dimen name="spacing_m">8dp</dimen>
+    <dimen name="spacing_l">12dp</dimen>
+    <dimen name="spacing_xl">16dp</dimen>
+    <dimen name="spacing_xxl">18dp</dimen>
+
+
+    <!--//////////////////////// Product Card Small ////////////////////////-->
+
+    <dimen name="sm_card_height">200dp</dimen>
+    <dimen name="sm_card_margin">5dp</dimen>
+    <dimen name="sm_card_radius">4dp</dimen>
+    <dimen name="sm_card_cover_width">140dp</dimen>
+    <dimen name="sm_card_cover_height">100dp</dimen>
+    <dimen name="sm_card_title">14sp</dimen>
+    <dimen name="sm_card_price_old">11sp</dimen>
+    <dimen name="sm_card_price_new">12sp</dimen>
+    <dimen name="sm_card_fvrt_width">15dp</dimen>
+    <dimen name="sm_card_fvrt_height">15dp</dimen>
+    <dimen name="sm_card_btn_height">25dp</dimen>
+    <dimen name="sm_card_btn_text">12sp</dimen>
+    <dimen name="sm_card_btn_margin">2dp</dimen>
+
+
+    <!--//////////////////////// Product Card Large ////////////////////////-->
+
+    <dimen name="lg_card_height">220dp</dimen>
+    <dimen name="lg_card_margin">5dp</dimen>
+    <dimen name="lg_card_radius">4dp</dimen>
+    <dimen name="lg_card_cover_width">150dp</dimen>
+    <dimen name="lg_card_cover_height">170dp</dimen>
+    <dimen name="lg_card_title">16sp</dimen>
+    <dimen name="lg_card_price_old">12sp</dimen>
+    <dimen name="lg_card_price_new">13sp</dimen>
+    <dimen name="lg_card_fvrt_width">20dp</dimen>
+    <dimen name="lg_card_fvrt_height">20dp</dimen>
+    <dimen name="lg_card_btn_height">28dp</dimen>
+    <dimen name="lg_card_btn_text">14sp</dimen>
+    <dimen name="lg_card_btn_margin">5dp</dimen>
+
+
+    <!--//////////////////////// Form ////////////////////////-->
+
+    <dimen name="button_height">45dp</dimen>
+    <dimen name="button_margin">20dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+
+    <dimen name="input_field_height">45dp</dimen>
+    <dimen name="input_field_margin">10dp</dimen>
+
+
+    <!--//////////////////////// SignUp Form ////////////////////////-->
+
+    <dimen name="signup_layout_margin">30dp</dimen>
+
+    <dimen name="signup_header_margin">20dp</dimen>
+    <dimen name="signup_header_textSize">24sp</dimen>
+
+    <dimen name="signup_form_margin">20dp</dimen>
+    <dimen name="signup_form_fields_margin">5dp</dimen>
+    <dimen name="signup_form_fields_height">50dp</dimen>
+
+    <dimen name="signup_button_height">40dp</dimen>
+    <dimen name="signup_button_textSize">18sp</dimen>
+
+
+    <!--//////////////////////// Update Info Form ////////////////////////-->
+
+    <dimen name="update_layout_margin">30dp</dimen>
+
+    <dimen name="update_header_margin">20dp</dimen>
+    <dimen name="update_header_textSize">20sp</dimen>
+
+    <dimen name="update_form_fields_margin">5dp</dimen>
+    <dimen name="update_form_fields_height">50dp</dimen>
+
+    <dimen name="update_form_button_height">40dp</dimen>
+    <dimen name="update_form_button_textSize">18sp</dimen>
+    <dimen name="update_form_button_marginTop">10dp</dimen>
+
+
+    <!--//////////////////////// Address Form ////////////////////////-->
+
+    <dimen name="address_layout_margin">30dp</dimen>
+
+    <dimen name="address_header_margin">20dp</dimen>
+    <dimen name="address_header_textSize">20sp</dimen>
+
+    <dimen name="address_form_fields_margin">5dp</dimen>
+    <dimen name="address_form_fields_height">50dp</dimen>
+
+    <dimen name="address_form_button_height">40dp</dimen>
+    <dimen name="address_form_button_textSize">18sp</dimen>
+    <dimen name="address_form_button_marginTop">10dp</dimen>
+
+
+</resources>

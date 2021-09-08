@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Contact Number"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/contact_no"
+            android:inputType="phone"
+            android:imeOptions="actionSearch"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondaryLight"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corners_edittext_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+<!--
+        <Button
+            android:id="@+id/dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="end"
+            android:background="@drawable/rounded_corners_button_accent" />
+-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/button_margin"
+            android:background="@drawable/rounded_corners_button"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"
+            app:backgroundTint="@color/colorAccentGreen"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

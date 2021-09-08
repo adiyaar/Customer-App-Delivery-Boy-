@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_product"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:orientation="vertical" >
+
+        <hyogeun.github.com.colorratingbarlib.ColorRatingBar
+            android:id="@+id/dialog_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            app:changeable="true"
+            android:layout_gravity="center_horizontal"
+            app:empty_color="@color/colorAccentGrey"
+            app:progress_color="@android:color/holo_orange_light" />
+
+        <EditText
+            android:id="@+id/dialog_author_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_field_height"
+            android:hint="@string/full_name"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/textColorSecondaryLight"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corners_edittext_light" />
+        <EditText
+            android:id="@+id/dialog_author_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_field_height"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress|textNoSuggestions"
+            android:textColor="@color/textColorSecondaryLight"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corners_edittext_light" />
+        <EditText
+            android:id="@+id/dialog_author_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_field_height"
+            android:hint="@string/your_message"
+            android:inputType="textMultiLine"
+            android:textColor="@color/textColorSecondaryLight"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:drawableStart="@drawable/ic_chat_bubble"
+            android:drawablePadding="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:minLines="10"
+            android:maxLines="20"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corners_edittext_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/rate_now"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:layout_gravity="end"
+            android:background="@drawable/rounded_corners_button_accent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

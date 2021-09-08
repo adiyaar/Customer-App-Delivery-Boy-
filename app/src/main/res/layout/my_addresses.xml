@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/windowBackgroundDark">
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/empty_record"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:tint="@color/grey"
+            android:src="@drawable/ic_location"
+            android:layout_width="140dp"
+            android:layout_height="140dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_not_found"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/textColorSecondaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_address"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/textColorSecondaryLight" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/continue_shopping_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="@string/new_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/button_margin"
+            app:backgroundTint="@color/colorAccentGreen"
+            android:background="@drawable/rounded_corners_button_green" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/addresses_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_address_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:src="@drawable/ic_add_location"
+            android:tint="@color/white"
+            android:elevation="5dp"
+            android:translationZ="3dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/colorAccentGreen" />
+
+    </FrameLayout>
+
+</RelativeLayout>

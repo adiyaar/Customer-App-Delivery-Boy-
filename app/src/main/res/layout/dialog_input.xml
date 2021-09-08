@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/dismissButton"
+            android:padding="12dp"
+            android:src="@drawable/ic_cancel_white_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="6dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="6dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/email_address"
+            android:inputType="textNoSuggestions"
+            android:imeOptions="actionSearch"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondaryLight"
+            android:textColorHint="@color/textColorPrimaryDark"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corners_edittext_light" />
+
+        <Button
+            android:layout_below="@id/dialog_input"
+            android:layout_marginTop="15dp"
+            android:id="@+id/dialog_button"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="end"
+            android:background="@drawable/rounded_corners_button_accent" />
+    </LinearLayout>
+
+
+</LinearLayout>

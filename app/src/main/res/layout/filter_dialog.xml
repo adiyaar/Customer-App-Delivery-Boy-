@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/windowBackground">
+
+
+    <LinearLayout
+        android:id="@+id/filter_dialog_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/product_price"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="16sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                android:id="@+id/filter_price_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="2dip"
+                android:minHeight="2dip"
+                app:data_type="_integer"
+                app:corner_radius="0"
+                app:gap="5"
+                app:min_value="0"
+                app:max_value="100000"
+                app:left_thumb_image="@drawable/ic_adjust"
+                app:right_thumb_image="@drawable/ic_adjust"
+                app:bar_highlight_color="@color/colorAccentBlue"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layoutDirection="ltr">
+
+            <TextView
+                android:id="@+id/filter_min_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textColor="@color/textColorSecondaryLight" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/filter_max_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100000"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textColor="@color/textColorSecondaryLight" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/filter_dialog_attributes"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerDark" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/filters_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dividerDark" />
+
+
+    <LinearLayout
+        android:id="@+id/filter_dialog_footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/filter_cancel_btn"
+            android:layout_weight="0.33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@color/colorAccentGrey" />
+
+        <Button
+            android:id="@+id/filter_clear_btn"
+            android:layout_weight="0.33"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:text="@string/clear"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@color/colorAccentGreen" />
+
+        <Button
+            android:id="@+id/filter_apply_btn"
+            android:layout_weight="0.33"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:text="@string/apply"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+</LinearLayout>

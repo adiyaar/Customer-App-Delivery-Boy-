@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layoutBackgroundLight"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:maxLines="1"
+            android:text="title"
+            android:textAlignment="textStart"
+            android:textColor="@color/textColorSecondaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.themescoder.androidstore.customs.CircularImageView
+            android:id="@+id/category_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+
+    <com.themescoder.androidstore.customs.CustomListView
+        android:id="@+id/sub_categories_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@color/dividerLight"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

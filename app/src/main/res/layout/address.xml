@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RadioGroup
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/input_field_margin"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:id="@+id/shippingRadioBtn"
+                    android:layout_width="134dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/radio_flat_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="3dp"
+                    android:text="Shipping"
+                    android:textColor="@drawable/radio_flat_text_selector" />
+
+                <RadioButton
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:id="@+id/billinRadioBtn"
+                    android:layout_width="134dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/radio_flat_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="3dp"
+                    android:text="Billing"
+                    android:textColor="@drawable/radio_flat_text_selector" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawablePadding="15dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/first_name"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawablePadding="15dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/last_name"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark" />
+
+            <!--Edited 28-Dec-18-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawablePadding="15dp"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:gravity="start|center_vertical"
+                android:hint="@string/location"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark" />
+            <!--Edited 28-Dec-18-->
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawablePadding="15dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/address"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawableEnd="@drawable/ic_chevron_down"
+                android:drawablePadding="15dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/country"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/zone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawableEnd="@drawable/ic_chevron_down"
+                android:drawablePadding="15dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/zone"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawablePadding="15dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/city"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/postcode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawablePadding="15dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/post_code"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawablePadding="15dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/contact_no"
+                android:inputType="phone"
+                android:imeOptions="actionDone"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorSecondaryLight" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/delivery_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:drawablePadding="15dp"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:gravity="start|center_vertical"
+                android:hint="@string/delivery_time"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorPrimaryDark" />
+
+            <LinearLayout
+                android:id="@+id/default_shipping_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_dark"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/default_shipping_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="@string/default_shipping"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHighlight="@color/colorAccent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_address_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/colorAccent"
+            android:text="@string/save_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

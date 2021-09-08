@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/windowBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Choose Multiple Pages Layout Style for Home, Categories and Shop Pages."
+            android:textColor="@color/white"
+            android:background="@color/grey_dark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height" />
+
+        <ExpandableListView
+            android:id="@+id/main_drawer_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:choiceMode="singleChoice"
+            android:divider="@color/dividerLight"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+
+</LinearLayout>

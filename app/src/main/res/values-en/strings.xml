@@ -1,0 +1,410 @@
+<resources>
+
+    <!--  Main Strings -->
+    <string name="actionSearch"> Search </string>
+    <string name="actionLanguage"> Language </string>
+
+    <string name="actionHome"> Home </string>
+    <string name="actionCategory"> Category </string>
+    <string name="actionCategories"> Categories </string>
+    <string name="actionShop"> Shop </string>
+    <string name="actionCart"> My Cart </string>
+    <string name="actionOrders"> My Orders </string>
+    <string name="actionAccount"> My Account </string>
+    <string name="actionAddresses"> My Addresses </string>
+    <string name="actionFavourites"> My Favorites </string>
+    <string name="actionSettings"> Settings </string>
+    <string name="actionNews"> News </string>
+    <string name="actionIntro"> Intro </string>
+    <string name="actionAbout"> About </string>
+    <string name="actionBooking"> Dr.CdmKart Appointment Booking </string>
+    <string name="actionWhatsApp"> Customer Support</string>
+    <string name="actionContactUs"> Contact Us </string>
+    <string name="actionShareApp"> Share App </string>
+    <string name="actionRateApp"> Rate App </string>
+    <string name="actionPartner"> Become a Partner </string>
+    <string name="actionLogin"> Login </string>
+    <string name="actionLogout"> Logout </string>
+    <string name="actionMe"> Me </string>
+
+    <string name="homeStyle1"> HOME 1 </string>
+    <string name="homeStyle2"> HOME 2 </string>
+    <string name="homeStyle3"> HOME 3 </string>
+    <string name="homeStyle4"> HOME 4 </string>
+    <string name="homeStyle5"> HOME 5 </string>
+    <string name="homeStyle6"> HOME 6 </string>
+    <string name="homeStyle7"> HOME 7 </string>
+    <string name="homeStyle8"> HOME 8 </string>
+    <string name="homeStyle9"> HOME 9 </string>
+    <string name="homeStyle10"> HOME 10 </string>
+    <string name="categoryStyle1"> CATEGORY 1 </string>
+    <string name="categoryStyle2"> CATEGORY 2 </string>
+    <string name="categoryStyle3"> CATEGORY 3 </string>
+    <string name="categoryStyle4"> CATEGORY 4 </string>
+    <string name="categoryStyle5"> CATEGORY 5 </string>
+    <string name="categoryStyle6"> CATEGORY 6 </string>
+
+    <string name="Newest"> NEWEST </string>
+    <string name="topSeller"> TOP SELLER </string>
+    <string name="superDeals"> SUPER DEALS </string>
+    <string name="mostLiked"> MOST LIKED </string>
+    <string name="currency"> Currency </string>
+
+    <string name="all"> All </string>
+    <string name="newest"> Newest </string>
+    <string name="top_seller"> Top Seller </string>
+    <string name="super_deals"> Deals </string>
+    <string name="most_liked"> Most Liked </string>
+    <string name="recentlyViewed"> Recently Viewed </string>
+
+    <string name="news_all"> All News </string>
+    <string name="news_categories"> News Categories </string>
+    <string name="news_description"> News Description </string>
+
+
+    <!--  Other Strings -->
+    <string name="ok"> OK </string>
+    <string name="and"> and </string>
+    <string name="NEW"> NEW </string>
+    <string name="OFF"> OFF </string>
+    <string name="save"> Save </string>
+    <string name="send"> Send </string>
+    <string name="next"> Next </string>
+    <string name="skip"> Skip </string>
+    <string name="grant"> Grant </string>
+    <string name="title"> Title </string>
+    <string name="start"> Start </string>
+    <string name="retry"> Retry </string>
+    <string name="apply"> Apply </string>
+    <string name="search"> Search </string>
+    <string name="clear"> Clear </string>
+    <string name="login"> Login </string>
+    <string name="signup"> Signup </string>
+    <string name="cancel"> Cancel </string>
+    <string name="track_order"> Track Order </string>
+    <string name="welcome"> Welcome </string>
+    <string name="explore"> Explore </string>
+    <string name="checkoutFinal"> Checkout </string>
+    <string name="register"> Register </string>
+    <string name="drawerOpen"> DrawerOpen </string>
+    <string name="drawerClose"> DrawerClose </string>
+    <string name="getdelivery_slot"> Please select at-least one delivery slot</string>
+
+    <string name="view"> View </string>
+    <string name="date"> Date </string>
+    <string name="cart"> Cart </string>
+    <string name="product"> Product </string>
+    <string name="products"> Products </string>
+    <string name="category"> Category </string>
+    <string name="categories"> Categories </string>
+    <string name="final_price"> Final Price </string>
+    <string name="total_price"> Total Price </string>
+    <string name="product_price"> Product Price </string>
+    <string name="checkout_price"> Checkout Price </string>
+    <string name="product_title"> Product Title </string>
+    <string name="view_product"> View Product </string>
+    <string name="quantity"> Quantity </string>
+    <string name="description"> Description </string>
+    <string name="attributes"> Attributes </string>
+    <string name="attribute_name"> Attribute Name </string>
+    <string name="product_description"> Product Description </string>
+
+    <string name="likes"> Likes </string>
+    <string name="google_login"> Google Login </string>
+    <string name="facebook_login"> Facebook Login </string>
+    <string name="in_stock"> In Stock </string>
+    <string name="outOfStock"> Out of Stock </string>
+    <string name="addToCart"> Add to Cart </string>
+    <string name="removeProduct"> Remove Product </string>
+    <string name="removeFromCart"> Remove from Cart </string>
+    <string name="remove"> Remove </string>
+    <string name="save_address"> Save Address </string>
+    <string name="save_changes"> Save Changes </string>
+    <string name="reset_filters"> Reset Filters </string>
+    <string name="order_now"> Order Now </string>
+    <string name="continue_shopping"> Continue Shopping </string>
+    <string name="proceed_checkout"> Proceed Checkout </string>
+
+    <string name="order"> Order </string>
+    <string name="order_id"> Order ID </string>
+    <string name="order_status"> Order Status </string>
+    <string name="order_date"> Order Date </string>
+    <string name="order_address"> Order Address </string>
+    <string name="order_details"> Order Details </string>
+    <string name="order_confirmed"> Order Confirmed </string>
+    <string name="order_notes"> Order Notes </string>
+    <string name="order_comments"> Order Comments </string>
+    <string name="no_of_products"> No. of Products </string>
+
+    <string name="tax"> Tax </string>
+    <string name="shipping"> Shipping </string>
+    <string name="discount"> Discount </string>
+    <string name="subtotal"> Subtotal </string>
+    <string name="total"> Total </string>
+    <string name="coupon"> Coupon </string>
+    <string name="coupon_code"> Coupon Code </string>
+    <string name="coupon_amount"> Coupon Amount </string>
+    <string name="coupon_discount"> Coupon Discount </string>
+    <string name="coupon_type"> Coupon Type </string>
+    <string name="sample_coupons"> Sample Coupon Codes </string>
+    <string name="payment_method"> Payment Method </string>
+    <string name="payment_details"> Payment Details </string>
+    <string name="card_number"> Card Number </string>
+    <string name="expiry_month"> Expiry Month </string>
+    <string name="expiry_year"> Expiry Year </string>
+    <string name="card_expiry"> Card Expiry </string>
+    <string name="card_cvv"> Card CVV </string>
+    <string name="payPal"> PayPal </string>
+    <string name="billing_address"> Billing Address </string>
+    <string name="shipping_address"> Shipping Address </string>
+    <string name="shipping_method"> Shipping Method </string>
+
+
+    <!--  Form Strings -->
+    <string name="full_name"> Full Name </string>
+    <string name="first_name"> First Name </string>
+    <string name="last_name"> Last Name </string>
+    <string name="email"> Email </string>
+    <string name="email_address"> Email Address </string>
+    <string name="dob"> Date of Birth </string>
+    <string name="gender"> Gender </string>
+    <string name="male"> Male </string>
+    <string name="female"> Female </string>
+    <string name="fax"> Fax </string>
+    <string name="mobile"> Mobile </string>
+    <string name="contact_no"> Contact No </string>
+    <string name="location">Location</string>
+    <string name="address"> Address </string>
+    <string name="country"> Country </string>
+    <string name="zone"> Zone </string>
+    <string name="state"> State </string>
+    <string name="city"> City </string>
+    <string name="post_code"> Post Code </string>
+    <string name="suburb"> Suburb </string>
+    <string name="password"> Password </string>
+    <string name="confirm_password"> Confirm Password </string>
+    <string name="new_password"> New Password </string>
+    <string name="current_password"> Current Password </string>
+    <string name="new_address"> New Address </string>
+    <string name="update_address"> Update Address </string>
+    <string name="edit_profile"> Edit Profile </string>
+    <string name="subscribe_newsletter"> Subscribe Newsletter </string>
+
+
+    <!--  Messages Strings -->
+    <string name="thank_you"> Thank You </string>
+    <string name="add_coupon"> Add Coupon? </string>
+    <string name="your_message"> Your Message </string>
+    <string name="empty_cart"> Your Cart is Empty </string>
+    <string name="record_not_found"> No Record Found </string>
+    <string name="item_added_to_cart"> Item Added to Cart </string>
+    <string name="item_removed_from_cart"> Removed from Cart </string>
+    <string name="something_went_wrong"> Something went Wrong! </string>
+    <string name="added_to_favourites"> Added to Favourites </string>
+    <string name="removed_from_favourites"> Removed from Favourites </string>
+    <string name="not_a_member"> Not a Member? </string>
+    <string name="login_or_signup"> Login &amp; Register </string>
+    <string name="login_or_create_account"> Please Login or create Account </string>
+    <string name="thank_you_for_shopping"> Thank You for shopping with us! </string>
+    <string name="coupon_removes_other_coupons"> This coupon may remove all other coupons! </string>
+
+    <string name="forgot_your_password"> Forgot Your Password? </string>
+    <string name="forgot_password"> I\'ve forgotten my password? </string>
+    <string name="already_have_account"> Already have an account? </string>
+    <string name="search_product_by_name"> Type Something to Search </string>
+    <string name="default_shipping"> Same as Shipping Address </string>
+    <string name="select_payment_method"> Select Payment Method </string>
+
+    <string name="order_dialog_prompt"> Do you really want to cancel the order? </string>
+
+    <string name="processing"> Processing... </string>
+    <string name="please_wait"> Please Wait... </string>
+    <string name="invalid_address"> Invalid Address </string>
+    <string name="no_internet"> Internet Connection is not Available! </string>
+
+    <string name="permission_rejected"> Permission not Granted! </string>
+    <string name="permission_camera_storage"> Need Camera and Storage Permissions! </string>
+    <string name="permission_camera_storage_needed"> This app needs camera and storage permissions to take pictures from the gallery or with the camera. </string>
+
+    <string name="rate_now"> Rate It! </string>
+    <string name="not_now"> Not Now </string>
+    <string name="rate_app_msg"> If you enjoy using this app, it would be great to take a moment to rate it. </string>
+
+    <string name="report_now">  Chat Now! </string>
+    <string name="cancel_now"> Cancel </string>
+    <string name="whats_app_msg"> Welcome to CdmKart Customer Support !!! Feel Free to Chat/Call with Us!! </string>
+
+    <string name="partner_now">  Join Now! </string>
+    <string name="partner_msg"> Does your business need on-demand, hyperlocal deliveries? CdmKart for Business is the one-stop solution you’re looking for. </string>
+
+    <string name="book_now"> Book Now! </string>
+    <string name="booking_msg"> Now Book your Appointment Fast and Easily and Get your Appointment Token Number! </string>
+
+    <string name="veryfynumbertxt"> Please enter verification code sent in your text message. </string>
+
+    <!--  Errors Message Strings -->
+    <string name="enter_name"> Enter Your Name </string>
+    <string name="enter_city"> Enter Your City </string>
+    <string name="enter_address"> Enter Your Address </string>
+    <string name="enter_message"> Enter Your Message </string>
+    <string name="select_zone"> Select Your Zone </string>
+    <string name="select_country"> Select Your Country </string>
+    <string name="invalid_first_name"> Invalid First Name </string>
+    <string name="invalid_last_name"> Invalid Last Name </string>
+    <string name="invalid_email"> Invalid Email Address </string>
+    <string name="invalid_password"> Invalid Password </string>
+    <string name="invalid_contact"> Invalid Contact No. </string>
+    <string name="invalid_post_code"> Invalid Postal Code </string>
+    <string name="invalid_credit_card"> Invalid Credit Card Number </string>
+    <string name="invalid_card_cvv"> Invalid Card CVV </string>
+    <string name="expired_card"> Card has been Expired </string>
+    <string name="invalid_payment_token"> Invalid Payment Token </string>
+    <string name="select_card_expiry"> Select your Card Expiry Date </string>
+    <string name="unexpected_response"> Unexpected Server Response </string>
+    <string name="cannot_get_payment_methods"> Error Getting Payment Methods </string>
+    <string name="cannot_initialize_braintree"> Error initializing Braintree Fragment </string>
+
+
+    <!--  Coupon Error Strings -->
+    <string name="coupon_expired"> Coupon is expired! </string>
+    <string name="coupon_applied"> Coupon already applied! </string>
+    <string name="coupon_cannot_be_applied"> Coupon cannot be applied! </string>
+    <string name="coupon_used_by_you"> You have already used this Coupon! </string>
+    <string name="coupon_used_by_all"> Coupon has been used by limited users! </string>
+    <string name="coupon_is_not_for_you"> You are not applicable to use this Coupon! </string>
+    <string name="coupon_cannot_used_with_existing"> Coupon cannot be used with existing Coupon! </string>
+    <string name="coupon_is_not_for_sale_items"> Coupon cannot be used on sale items! </string>
+    <string name="coupon_is_not_for_these_products"> Coupon is not valid for these products! </string>
+    <string name="coupon_is_not_for_these_categories"> Coupon is not valid for these category of products! </string>
+    <string name="coupon_is_not_for_excluded_products"> Coupon cannot be used on excluded products! </string>
+    <string name="coupon_is_not_for_excluded_categories"> Coupon cannot be used on excluded categories! </string>
+    <string name="coupon_max_amount_is_less_than_order_total"> Cart total does not meet the maximum amount for Coupon! </string>
+    <string name="coupon_min_amount_is_greater_than_order_total"> Cart total does not meet the minimum amount for Coupon! </string>
+
+
+    <!--  App Intro Slides Strings -->
+    <string name="slide_1_title"> Home Page </string>
+    <string name="slide_2_title"> Category Page </string>
+    <string name="slide_3_title"> Shop Page </string>
+    <string name="slide_4_title"> Cart Page </string>
+    <string name="slide_5_title"> Order Page </string>
+    <string name="slide_1_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+    <string name="slide_2_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+    <string name="slide_3_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+    <string name="slide_4_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+    <string name="slide_5_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+
+
+    <!--  App Settings Strings -->
+    <string name="select_language"> Select Language </string>
+    <string name="official_web"> Official Website </string>
+    <string name="share_app"> Share App </string>
+    <string name="rate_app"> Rate App </string>
+    <string name="whats_app"> WhatsApp Customer Support </string>
+    <string name="privacy_policy"> Privacy Policy </string>
+    <string name="refund_policy"> Refund Policy </string>
+    <string name="service_terms"> Terms of Service </string>
+    <string name="ad_banner"> Banner Ad </string>
+    <string name="ad_interstitial"> Interstitial Ad </string>
+    <string name="push_notification"> Push Notifications </string>
+    <string name="local_notification"> Local Notifications </string>
+    <string name="cart_button_toggle"> Cart Button on Card </string>
+
+    <!--Youtube-->
+    <string name="google_server_key">AIzaSyCO0XtIj62soHq40hBMBpKs-WpkMYNFoCA</string>
+    <string name="google_android_key">AIzaSyCO0XtIj62soHq40hBMBpKs-WpkMYNFoCA</string>
+    <string name="play_button">Play</string>
+    <string name="favorite_button">Favorite</string>
+    <string name="comments">Comments</string>
+    <string name="empty_textview">Error loading data</string>
+    <string name="video_subtitle_start">"Uploaded at "</string>
+    <string name="video_subtitle_end">" by "</string>
+    <string name="no_results">No results</string>
+    <string name="no_results_subtitle">Nothing to see here.</string>
+    <string name="loading">Loading..</string>
+    <string name="video_live">Select a stream</string>
+    <string name="video_no_live_title">On a break</string>
+    <string name="video_no_live">No live streams available now</string>
+    <string name="favorite_success">The item has been added</string>
+    <string name="favorite_duplicate">This item has already been added</string>
+    <string name="open_button">Open</string>
+    <string name="share">Share</string>
+    <string name="video_share_begin">"I just saw this video: "</string>
+    <string name="video_share_middle">" in the \""</string>
+    <string name="video_share_end">\" app</string>
+    <string name="share_header">Share</string>
+    <string name="instagram_access_token"></string>
+    <string name="pinterest_access_token"></string>
+    <string name="facebook_access_token"></string>
+    <string name="soundcloud_id"></string>
+    <string name="flickr_key"></string>
+    <string name="favorite">Favorite</string>
+    <string name="no_favorites">Your can add (more) favorites by opening an item and selecting \"favorite\"</string>
+    <string name="favorite_menu_delete">Delete</string>
+    <string name="item_del_text">You are about to delete all your favorites</string>
+    <string name="item_del_confirmation">I know</string>
+    <string name="video">Videos</string>
+    <string name="playlist">Playlist</string>
+    <string name="live">Live</string>
+    <string name="actionYoutube"> CdmKart TV </string>
+    <string name="background_audio">Playing audio</string>
+    <string name="download_permission_explaination">In order to download files, you need to grant us permission to your storage.\n\nAfter granting us access, you may go ahead and download the file.</string>
+    <string name="download_permission_grant">Grant permission</string>
+    <string name="download_unavailable">You can not download this content</string>
+    <string name="download_failed">Download failed</string>
+    <string name="download_open_failed">No app to handle file</string>
+    <string name="action_download">Download</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="wallpaper_success">Wallpaper has been set!</string>
+
+    <!-- Connection dialogs -->
+    <string name="dialog_connection_title">Servers unreachable</string>
+    <string name="dialog_connection_description">We can not connect with our APIs.\n\nPlease ensure that you have set up your API keys and parameters as documented!</string>
+    <string name="dialog_internet_title">No internet</string>
+    <string name="dialog_internet_description">You seem to have no internet connection, this app requires internet to get the latest content.\n\nYou can continue to see your favorite/offline items!</string>
+    <string name="title_activity_woo_commerce_login">Sign in</string>
+    <string name="app_terms_services">
+        Creating an account means you\'re okay with our
+    </string>
+
+
+    <string-array name="sortBy_array">
+        <item> Newest </item>
+        <item> A - Z </item>
+        <item> Z - A </item>
+        <item> Price : High - Low </item>
+        <item> Price : Low - High </item>
+        <item> Top Seller </item>
+        <item> Special Deals </item>
+        <item> Most Liked </item>
+    </string-array>
+
+
+    <string name="lorem_ipsum">
+        No Minimum Order - Order in for yourself or for the group, with no restrictions.
+        Deliveries made in a flash. Anytime, anywhere.
+        The quickest way to get anything delivered in your city.
+        One-stop solution to all your delivery needs.
+    </string>
+
+
+    <string name="delivery_time">Put time and date when you want this delivery</string>
+    <string name="flashSale"> Flash Sale </string>
+    <string name="upcoming"> UPCOMING </string>
+    <string name="cannot_add_upcoming"> You can not add upcoming item to cart. </string>
+
+    <string name="a_z">A_Z</string>
+    <string name="select_date">Please select date first</string>
+    <string name="packing_charge">Packing charges</string>
+    <string name="enter_delivery_time_date">Click here to enter delivery time and date.</string>
+    <string name="select_time_slot">Please select delivery time slot.</string>
+    <string name="can_not_select_time_slot"> You can not select previous time slot, please select coming time slot. </string>
+    <string name="official_whatsapp">Customer Support</string>
+    <string name="select_option">Please select at-least one option of question</string>
+    <string name="thirkural">Thirukural</string>
+    <string name="timing">Timing</string>
+    <string name="set_current_location">Set current location</string>
+    <string name="error">Api key is empty or incorrect</string>
+    <string name="enter_location">Search location</string>
+
+</resources>

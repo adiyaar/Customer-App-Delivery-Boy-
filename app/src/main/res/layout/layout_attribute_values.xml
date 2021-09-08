@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp" >
+
+    <TextView
+        android:id="@+id/attribute_value_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attribute_name"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorSecondaryDark"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/attribute_value_prefix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prefix"
+        android:textSize="14sp"
+        android:textColor="@color/textColorSecondaryDark"
+        android:layout_marginEnd="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/attribute_value_price" />
+
+    <TextView
+        android:id="@+id/attribute_value_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_price"
+        android:textSize="14sp"
+        android:textColor="@color/textColorSecondaryDark"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+

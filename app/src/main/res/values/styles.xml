@@ -1,0 +1,211 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+
+    <style name="MySplashScreen" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+
+    </style>
+
+
+    <style name="ButtonBorder" parent="Widget.AppCompat.Button.Colored"/>
+
+    <style name="ButtonBorder.Primary">
+        <item name="android:background">@drawable/btnbg_primary_outline</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="MyToolbar" parent="AppTheme">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="MyToolbarPopUp" parent="AppTheme">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+
+    <style name="MyNavigationDrawer" parent="AppTheme">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:scrollbarThumbVertical">@android:color/transparent</item>
+    </style>
+
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <!-- Custom Preference Theme inherits from the v14 support library Material Theme -->
+    <style name="AppPreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceStyle">@style/AppPreference</item>
+    </style>
+
+    <!-- Style for an Preference Entry -->
+    <style name="AppPreference" parent="@style/Preference.Material">
+        <item name="android:layout">@layout/preference_material</item>
+    </style>
+
+    <!--Youtube List Style-->
+    <style name="listStyleNoPadding">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogFullscreen" parent="@android:style/Theme.Material.Light.DialogWhenLarge">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slideup_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+    <style name="AndroidImageSlider_Indicator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+        <item name="selected_width">10dp</item>
+        <item name="selected_height">10dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+        <item name="selected_padding_left">6dp</item>
+        <item name="selected_padding_right">6dp</item>
+        <item name="unselected_padding_left">4dp</item>
+        <item name="unselected_padding_right">4dp</item>
+    </style>
+
+    <style name="AndroidImageSlider_Indicator_Style3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">rect</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+        <item name="selected_width">15dp</item>
+        <item name="selected_height">6dp</item>
+        <item name="unselected_width">15dp</item>
+        <item name="unselected_height">6dp</item>
+        <item name="selected_padding_left">6dp</item>
+        <item name="selected_padding_right">6dp</item>
+        <item name="unselected_padding_left">4dp</item>
+        <item name="unselected_padding_right">4dp</item>
+    </style>
+
+    <!-- PayUMoney Style-->
+    <style name="AppTheme.default" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/button_green</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_Default</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="myFullscreenAlertDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/gray</item>
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_rating_bar_bg</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:maxHeight">10dp</item>
+    </style>
+
+
+
+    <!-- Color Themes For Components -->
+    <style name="TemplateTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/red_500</item>
+        <item name="colorPrimaryDark">@color/red_700</item>
+        <item name="colorAccent">@color/red_500</item>
+    </style>
+    <style name="TemplateTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/deep_purple_500</item>
+        <item name="colorPrimaryDark">@color/deep_purple_700</item>
+        <item name="colorAccent">@color/deep_purple_A100</item>
+    </style>
+    <style name="TemplateTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/light_blue_500</item>
+        <item name="colorPrimaryDark">@color/light_blue_700</item>
+        <item name="colorAccent">@color/light_blue_500</item>
+    </style>
+    <style name="TemplateTheme4" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryDark">@color/green_700</item>
+        <item name="colorAccent">@color/green_500</item>
+    </style>
+    <style name="TemplateTheme5" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/yellow_500</item>
+        <item name="colorPrimaryDark">@color/yellow_700</item>
+        <item name="colorAccent">@color/yellow_500</item>
+    </style>
+    <style name="TemplateTheme6" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue_grey_500</item>
+        <item name="colorPrimaryDark">@color/blue_grey_700</item>
+        <item name="colorAccent">@color/blue_grey_500</item>
+    </style>
+    <style name="TemplateTheme7" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/pink_500</item>
+        <item name="colorPrimaryDark">@color/pink_700</item>
+        <item name="colorAccent">@color/pink_500</item>
+    </style>
+    <style name="TemplateTheme8" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="colorPrimaryDark">@color/indigo_700</item>
+        <item name="colorAccent">@color/indigo_500</item>
+    </style>
+    <style name="TemplateTheme9" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/cyan_500</item>
+        <item name="colorPrimaryDark">@color/cyan_700</item>
+        <item name="colorAccent">@color/cyan_500</item>
+    </style>
+    <style name="TemplateTheme10" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/light_green_500</item>
+        <item name="colorPrimaryDark">@color/light_green_700</item>
+        <item name="colorAccent">@color/light_green_500</item>
+    </style>
+
+
+
+</resources>

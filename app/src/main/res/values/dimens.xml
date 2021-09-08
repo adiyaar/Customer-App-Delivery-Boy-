@@ -1,0 +1,59 @@
+<resources>
+
+
+    <dimen name="badge_text_size" >12sp</dimen>
+    <dimen name="image_slider_height">360dp</dimen>
+
+
+    <!--//////////////////////// HomePage ////////////////////////-->
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="banner_height">200dp</dimen>
+    <dimen name="drawer_header_height">100dp</dimen>
+
+
+    <!--//////////////////////// Product Card Small ////////////////////////-->
+
+    <dimen name="sm_card_height">200dp</dimen>
+    <dimen name="sm_card_margin">5dp</dimen>
+    <dimen name="sm_card_radius">4dp</dimen>
+    <dimen name="sm_card_cover_width">140dp</dimen>
+    <dimen name="sm_card_cover_height">100dp</dimen>
+    <dimen name="sm_card_title">14sp</dimen>
+    <dimen name="sm_card_price_old">11sp</dimen>
+    <dimen name="sm_card_price_new">12sp</dimen>
+    <dimen name="sm_card_fvrt_width">15dp</dimen>
+    <dimen name="sm_card_fvrt_height">15dp</dimen>
+    <dimen name="sm_card_btn_height">25dp</dimen>
+    <dimen name="sm_card_btn_text">12sp</dimen>
+    <dimen name="sm_card_btn_margin">2dp</dimen>
+
+
+    <!--//////////////////////// Product Card Large ////////////////////////-->
+
+    <dimen name="lg_card_height">220dp</dimen>
+    <dimen name="lg_card_margin">5dp</dimen>
+    <dimen name="lg_card_radius">4dp</dimen>
+    <dimen name="lg_card_cover_width">130dp</dimen>
+    <dimen name="lg_card_cover_height">145dp</dimen>
+    <dimen name="lg_card_title">16sp</dimen>
+    <dimen name="lg_card_price_old">12sp</dimen>
+    <dimen name="lg_card_price_new">13sp</dimen>
+    <dimen name="lg_card_fvrt_width">20dp</dimen>
+    <dimen name="lg_card_fvrt_height">20dp</dimen>
+    <dimen name="lg_card_btn_height">28dp</dimen>
+    <dimen name="lg_card_btn_text">14sp</dimen>
+    <dimen name="lg_card_btn_margin">5dp</dimen>
+
+
+    <!--//////////////////////// Form ////////////////////////-->
+
+    <dimen name="button_height">45dp</dimen>
+    <dimen name="button_margin">20dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+
+    <dimen name="input_field_height">40dp</dimen>
+    <dimen name="input_field_margin">10dp</dimen>
+
+
+</resources>

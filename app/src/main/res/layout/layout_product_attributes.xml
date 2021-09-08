@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:id="@+id/attribute"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/rounded_corners_edittext_light" >
+    
+    <TextView
+        android:id="@+id/attribute_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="15sp"
+        android:textAlignment="viewStart"
+        android:text="@string/attribute_name"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/textColorSecondary" />
+
+    <TextView
+        android:id="@+id/attribute_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="15sp"
+        android:textAlignment="viewEnd"
+        android:text="@string/attribute_name"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/textColorSecondary" />
+
+    <!--<Spinner
+        android:id="@+id/attribute_value"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="match_parent"
+        android:textColor="@color/textColorSecondary"
+        android:spinnerMode="dropdown"
+        style="@style/Base.Widget.AppCompat.Spinner" />-->
+
+</RelativeLayout>
+

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/products_horizontal_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/iconsLight"
+        android:text="@string/products"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/shop_more_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentEnd="true"
+        android:drawableEnd="@drawable/ic_chevron_right"
+        android:drawableTint="@color/iconsLight"
+        android:text="@string/show_more"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="18sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/products_horizontal_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/products_horizontal_header"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:id="@+id/empty_record_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/record_not_found"
+        android:textColor="@color/textColorPrimaryDark"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="50dp" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrame"
+        android:layout_below="@+id/products_horizontal_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".7"
+        android:visibility="gone"
+        app:shimmer_duration="1500">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/layout_product_grid_sm" />
+            <include
+                layout="@layout/layout_product_grid_sm" />
+            <include
+                layout="@layout/layout_product_grid_sm" />
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</RelativeLayout>

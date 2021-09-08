@@ -1,0 +1,391 @@
+<resources>
+
+    <!--  Main Strings -->
+    <string name="actionSearch"> SUCHE </string>
+    <string name="actionLanguage"> SPRACHE </string>
+
+    <string name="actionHome"> ZUHAUSE </string>
+    <string name="actionCategory"> KATEGORIE </string>
+    <string name="actionCategories"> KATEGORIEN </string>
+    <string name="actionShop"> GESCHÄFT </string>
+    <string name="actionCart"> MEIN WARENKORB </string>
+    <string name="actionOrders"> MEINE BEFEHLE </string>
+    <string name="actionAccount"> MEIN KONTO </string>
+    <string name="actionAddresses"> MEINE ADRESSEN </string>
+    <string name="actionFavourites"> MEINE FAVORITEN </string>
+    <string name="actionSettings"> EINSTELLUNGEN </string>
+    <string name="actionNews"> NACHRICHTEN </string>
+    <string name="actionIntro"> INTRO </string>
+    <string name="actionAbout"> ÜBER </string>
+    <string name="actionContactUs"> KONTAKTIERE UNS </string>
+    <string name="actionShareApp"> APP TEILEN </string>
+    <string name="actionRateApp"> BEWERTUNGS APP</string>
+    <string name="actionLogin"> ANMELDUNG </string>
+    <string name="actionLogout"> AUSLOGGEN </string>
+    <string name="actionMe"> mir </string>
+
+    <string name="homeStyle1"> ZUHAUSE 1 </string>
+    <string name="homeStyle2"> ZUHAUSE 2 </string>
+    <string name="homeStyle3"> ZUHAUSE 3 </string>
+    <string name="homeStyle4"> ZUHAUSE 4 </string>
+    <string name="homeStyle5"> ZUHAUSE 5 </string>
+    <string name="homeStyle6"> ZUHAUSE 6 </string>
+    <string name="homeStyle7"> ZUHAUSE 7 </string>
+    <string name="homeStyle8"> ZUHAUSE 8 </string>
+    <string name="homeStyle9"> ZUHAUSE 9 </string>
+    <string name="homeStyle10"> ZUHAUSE 10 </string>
+    <string name="categoryStyle1"> KATEGORIE 1 </string>
+    <string name="categoryStyle2"> KATEGORIE 2 </string>
+    <string name="categoryStyle3"> KATEGORIE 3 </string>
+    <string name="categoryStyle4"> KATEGORIE 4 </string>
+    <string name="categoryStyle5"> KATEGORIE 5 </string>
+    <string name="categoryStyle6"> KATEGORIE 6 </string>
+
+    <string name="Newest"> NEUESTE </string>
+    <string name="topSeller"> TOPSELLER </string>
+    <string name="superDeals"> ANGEBOTE </string>
+    <string name="mostLiked"> GEFALLEN </string>
+    <string name="currency"> Valuta </string>
+
+    <string name="all"> Alle </string>
+    <string name="newest"> Neueste </string>
+    <string name="top_seller"> Topseller </string>
+    <string name="super_deals"> Angebote </string>
+    <string name="most_liked"> Gefallen </string>
+    <string name="recentlyViewed"> Zuletzt angesehen </string>
+
+    <string name="news_all"> Alle Nachrichten </string>
+    <string name="news_categories"> Nachrichten Kategorien </string>
+    <string name="news_description"> Nachrichten Beschreibung </string>
+
+
+    <!--  Other Strings -->
+    <string name="ok"> OK </string>
+    <string name="and"> und </string>
+    <string name="NEW"> NEU </string>
+    <string name="OFF"> AUS </string>
+    <string name="save"> Sparen </string>
+    <string name="send"> Senden </string>
+    <string name="next"> Nächster </string>
+    <string name="skip"> Überspringen </string>
+    <string name="grant"> Gewähren </string>
+    <string name="title"> Titel </string>
+    <string name="start"> Anfang </string>
+    <string name="retry"> Wiederholen </string>
+    <string name="apply"> Anwenden </string>
+    <string name="search"> Suche </string>
+    <string name="clear"> Klar </string>
+    <string name="login"> Anmeldung </string>
+    <string name="signup"> Anmelden </string>
+    <string name="cancel"> Stornieren </string>
+    <string name="track_order"> Bestellung verfolgen </string>
+    <string name="explore"> Erforschen </string>
+    <string name="welcome"> Willkommen </string>
+    <string name="checkoutFinal"> Auschecken </string>
+    <string name="register"> Registrieren </string>
+    <string name="drawerOpen"> DrawerOpen </string>
+    <string name="drawerClose"> DraherClose </string>
+
+    <string name="view"> Aussicht </string>
+    <string name="date"> Datum </string>
+    <string name="cart"> Karte </string>
+    <string name="product"> Produkt </string>
+    <string name="products"> Produkte </string>
+    <string name="category"> Kategorie </string>
+    <string name="categories"> Kategorien </string>
+    <string name="final_price"> Endgültiger Preis </string>
+    <string name="total_price"> Gesamt Preis </string>
+    <string name="product_price"> Produkt Preis </string>
+    <string name="checkout_price"> Kasse Preis </string>
+    <string name="product_title"> Produkt Titel </string>
+    <string name="view_product"> Produkt ansehen </string>
+    <string name="quantity"> Anzahl </string>
+    <string name="description"> Beschreibung </string>
+    <string name="attributes"> Attribut </string>
+    <string name="attribute_name"> Attribut Name </string>
+    <string name="product_description"> Produkt Beschreibung </string>
+
+    <string name="likes"> Likes </string>
+    <string name="google_login"> Google Anmeldung </string>
+    <string name="facebook_login"> Facebook Anmeldung </string>
+    <string name="in_stock"> Auf Stock </string>
+    <string name="outOfStock"> Aus Stock </string>
+    <string name="addToCart"> Addieren zu Karte </string>
+    <string name="removeProduct"> Entfernen Produkt </string>
+    <string name="removeFromCart"> Entfernen von Karte </string>
+    <string name="remove"> Entfernen </string>
+    <string name="save_address"> Adresse Speichern </string>
+    <string name="save_changes"> Änderungen Speichern </string>
+    <string name="reset_filters"> Filter zurücksetzen </string>
+    <string name="order_now"> Jetzt bestellen </string>
+    <string name="continue_shopping"> Fortsetzen Einkaufen </string>
+    <string name="proceed_checkout"> Fortsetzen Auftrag </string>
+
+    <string name="order"> Auftrag </string>
+    <string name="order_id"> Auftrag Nummer </string>
+    <string name="order_status"> Auftrag Status </string>
+    <string name="order_date"> Auftrag Datum </string>
+    <string name="order_address"> Auftrag Adresse </string>
+    <string name="order_details"> Auftrag Details </string>
+    <string name="order_confirmed"> Auftrag Bestätigt </string>
+    <string name="order_notes"> Order Notizen </string>
+    <string name="order_comments"> Order Bemerkungen </string>
+    <string name="no_of_products"> Anzahl der Produkte </string>
+
+    <string name="tax"> Steuer </string>
+    <string name="shipping"> Versand </string>
+    <string name="discount"> Rabatt </string>
+    <string name="subtotal"> Zwischensumme </string>
+    <string name="total"> Gesamt </string>
+    <string name="coupon"> Coupon </string>
+    <string name="coupon_code"> Coupon Code </string>
+    <string name="coupon_amount"> Coupon Menge </string>
+    <string name="coupon_discount"> Coupon Rabatt </string>
+    <string name="coupon_type"> Coupon Art </string>
+    <string name="sample_coupons"> Beispiel Coupon Codes </string>
+    <string name="payment_method"> Zahlung Methode </string>
+    <string name="payment_details"> Zahlung Details </string>
+    <string name="card_number"> Ausweis Nummer </string>
+    <string name="expiry_month"> Ablauf Monat </string>
+    <string name="expiry_year"> Ablauf Jahr </string>
+    <string name="card_cvv"> Ausweis CVV </string>
+    <string name="payPal"> PayPal </string>
+    <string name="billing_address"> Rechnungs Adresse </string>
+    <string name="shipping_address"> Versand Adresse </string>
+    <string name="shipping_method"> Versand Methode </string>
+
+
+    <!--  Form Strings -->
+    <string name="full_name"> Voll Name </string>
+    <string name="first_name"> Zuerst Name </string>
+    <string name="last_name"> Letzte Name </string>
+    <string name="email"> Email </string>
+    <string name="email_address"> Email Adresse </string>
+    <string name="dob"> Geburtsdatum </string>
+    <string name="gender"> Geschlecht </string>
+    <string name="male"> Männlich </string>
+    <string name="female"> Weiblich </string>
+    <string name="fax"> Fax </string>
+    <string name="mobile"> Mobile </string>
+    <string name="contact_no"> Kontakt Nummer </string>
+    <string name="location">Location</string>
+    <string name="address"> Adresse </string>
+    <string name="country"> Land </string>
+    <string name="zone"> Zone </string>
+    <string name="state"> Bundesland </string>
+    <string name="city"> Stadt </string>
+    <string name="post_code"> Postleitzahl </string>
+    <string name="suburb"> Vorort </string>
+    <string name="password"> Passwort </string>
+    <string name="confirm_password"> Bestätigen Passwort </string>
+    <string name="new_password"> Neu Passwort </string>
+    <string name="current_password"> Strom Passwort </string>
+    <string name="new_address"> Neue Adresse </string>
+    <string name="update_address"> Aktualisieren Adresse </string>
+    <string name="edit_profile"> Edieren Profil </string>
+    <string name="subscribe_newsletter"> Abonnieren Newsletter </string>
+
+
+    <!--  Messages Strings -->
+    <string name="thank_you"> Danke </string>
+    <string name="add_coupon"> Addieren Coupon? </string>
+    <string name="your_message"> Deine Nachricht </string>
+    <string name="empty_cart"> Dein Wagen ist leer </string>
+    <string name="record_not_found"> Kein Eintrag gefunden </string>
+    <string name="item_added_to_cart"> Artikel in den Warenkorb Addieren </string>
+    <string name="item_removed_from_cart"> Aus dem Warenkorb entfernt </string>
+    <string name="something_went_wrong"> Etwas ist schief gelaufen! </string>
+    <string name="added_to_favourites"> Zu Favoriten Addieren </string>
+    <string name="removed_from_favourites"> Aus Favoriten entfernt </string>
+    <string name="not_a_member"> Kein Mitglied? </string>
+    <string name="login_or_signup"> Anmeldung &amp; Registrieren </string>
+    <string name="login_or_create_account"> Bitte einloggen oder Konto erstellen </string>
+    <string name="thank_you_for_shopping"> Danke für ihren Einkauf! </string>
+    <string name="coupon_removes_other_coupons"> Dieser Coupon kann alle anderen Coupons entfernen! </string>
+
+    <string name="order_dialog_prompt"> Do you really want to cancel? </string>
+
+    <string name="forgot_your_password"> Vergessen Ihre Passwort? </string>
+    <string name="forgot_password"> Ich habe mein Passwort vergessen? </string>
+    <string name="already_have_account"> Hast du schon ein Konto? </string>
+    <string name="search_product_by_name"> Geben Sie etwas zu suchen </string>
+    <string name="default_shipping"> Standard Versand Adresse </string>
+    <string name="select_payment_method"> Wählen Zahlung Methode </string>
+
+    <string name="processing"> Verarbeitung... </string>
+    <string name="please_wait"> Bitte Warte ab... </string>
+    <string name="invalid_address"> Ungültige Adresse </string>
+    <string name="no_internet"> Nein Internet Verbindung </string>
+
+    <string name="permission_rejected"> Permission not Granted! </string>
+    <string name="permission_camera_storage"> Need Camera and Storage Permissions! </string>
+    <string name="permission_camera_storage_needed"> This app needs camera and storage permissions to take pictures from the gallery or with the camera. </string>
+
+    <string name="rate_now"> Rate es! </string>
+    <string name="not_now"> Nicht jetzt </string>
+    <string name="rate_app_msg"> Wenn Sie gerne diese App nutzen, sollten Sie sich einen Moment Zeit nehmen, um sie zu bewerten. </string>
+
+    <string name="veryfynumbertxt"> Voer de verificatiecode in die in uw sms-bericht is verzonden. </string>
+
+    <!--  Errors Message Strings -->
+    <string name="enter_name"> Eingeben Ihre Name </string>
+    <string name="enter_city"> Eingeben Ihre Stadt </string>
+    <string name="enter_address"> Eingeben Ihre Adresse </string>
+    <string name="enter_message"> Eingeben Ihre Nachricht </string>
+    <string name="select_zone"> Wählen Ihre Zone </string>
+    <string name="select_country"> Wählen Ihre Land </string>
+    <string name="invalid_first_name"> Ungültig Vorname </string>
+    <string name="invalid_last_name"> Ungültig Nachname </string>
+    <string name="invalid_email"> Ungültig Email Addresse </string>
+    <string name="invalid_password"> Ungültig Passwort </string>
+    <string name="invalid_contact"> Ungültig Kontakt Nummer </string>
+    <string name="invalid_post_code"> Ungültig Post Code </string>
+    <string name="invalid_credit_card"> Ungültig Kredit Ausweis Nummer </string>
+    <string name="invalid_card_cvv"> Ungültig Ausweis CVV </string>
+    <string name="expired_card"> Ausweis ist Abgelaufen </string>
+    <string name="invalid_payment_token"> Ungültige Zahlung Beweis </string>
+    <string name="select_card_expiry"> Wählen Ihre Ausweis Abgelaufen Datum </string>
+    <string name="unexpected_response"> Unerwartet Server Antwort </string>
+    <string name="cannot_get_payment_methods"> Fehler Erhalten Zahlung Methoden </string>
+    <string name="cannot_initialize_braintree"> Fehler initialisieren Braintree Fragment </string>
+
+
+    <!--  Coupon Error Strings -->
+    <string name="coupon_expired"> Coupon ist abgelaufen! </string>
+    <string name="coupon_applied"> Coupon bereits vergeben! </string>
+    <string name="coupon_cannot_be_applied"> Coupon kann nicht angewendet werden!! </string>
+    <string name="coupon_used_by_you"> Du hast diesen Coupon bereits benutzt! </string>
+    <string name="coupon_used_by_all"> Coupon wurde von eingeschränkten Benutzern verwendet! </string>
+    <string name="coupon_is_not_for_you"> Sie können diesen Coupon nicht verwenden! </string>
+    <string name="coupon_cannot_used_with_existing"> Coupon kann nicht mit bestehenden Coupons verwendet werden! </string>
+    <string name="coupon_is_not_for_sale_items"> Coupon kann nicht zum Verkauf angeboten werden! </string>
+    <string name="coupon_is_not_for_these_products"> Coupon ist nicht gültig für diese Produkte! </string>
+    <string name="coupon_is_not_for_these_categories"> Der Coupon gilt nicht für diese Produktkategorie! </string>
+    <string name="coupon_is_not_for_excluded_products"> Coupon kann nicht für ausgeschlossene Produkte verwendet werden! </string>
+    <string name="coupon_is_not_for_excluded_categories"> Coupon kann nicht für ausgeschlossene Kategorien verwendet werden! </string>
+    <string name="coupon_max_amount_is_less_than_order_total"> Der Warenkorbbetrag entspricht nicht dem Höchstbetrag für Coupon! </string>
+    <string name="coupon_min_amount_is_greater_than_order_total"> Einkaufswagensumme entspricht nicht dem Mindestbetrag für Coupon! </string>
+
+
+    <!--  App Intro Slides Strings -->
+    <string name="slide_1_title"> Zuhause Seite </string>
+    <string name="slide_2_title"> Kategorie Seite </string>
+    <string name="slide_3_title"> Geschäft Seite </string>
+    <string name="slide_4_title"> Karte Seite </string>
+    <string name="slide_5_title"> Auftrag Seite </string>
+    <string name="slide_1_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+    <string name="slide_2_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+    <string name="slide_3_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+    <string name="slide_4_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+    <string name="slide_5_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </string>
+
+
+    <!--  App Settings Strings -->
+    <string name="select_language"> Sprache auswählen </string>
+    <string name="official_web"> Offizielle Website </string>
+    <string name="share_app"> App teilen </string>
+    <string name="rate_app"> Bewertungs App </string>
+    <string name="privacy_policy"> Datenschutz Bestimmungen </string>
+    <string name="refund_policy"> Rückgaberecht </string>
+    <string name="service_terms"> Nutzungsbedingungen </string>
+    <string name="ad_banner"> Banner Anzeige </string>
+    <string name="ad_interstitial"> Interstitial Anzeige </string>
+
+    <string name="push_notification"> Mitteilungen </string>
+    <string name="local_notification"> Lokale Benachrichtigungen </string>
+    <string name="cart_button_toggle"> Cart Save Button auf Karte </string>
+
+    <!--Youtube-->
+    <string name="google_server_key">AIzaSyCO0XtIj62soHq40hBMBpKs-WpkMYNFoCA</string>
+    <string name="google_android_key">AIzaSyCO0XtIj62soHq40hBMBpKs-WpkMYNFoCA</string>
+    <string name="play_button">Spelen</string>
+    <string name="favorite_button">Favoriete</string>
+    <string name="comments">Comments</string>
+    <string name="empty_textview">Fout bij het laden van gegevens</string>
+    <string name="video_subtitle_start">"Geupload om "</string>
+    <string name="video_subtitle_end">" door "</string>
+    <string name="no_results">Geen resultaten</string>
+    <string name="no_results_subtitle">Niets te zien hier.</string>
+    <string name="loading">Bezig met laden..</string>
+    <string name="video_live">Selecteer een stream</string>
+    <string name="video_no_live_title">Tijdens een pauze</string>
+    <string name="video_no_live">Geen livestreams nu beschikbaar</string>
+    <string name="favorite_success">Het item is toegevoegd</string>
+    <string name="favorite_duplicate">Dit item is al toegevoegd</string>
+    <string name="open_button">Open</string>
+    <string name="share">Delen</string>
+    <string name="video_share_begin">"Ik heb net deze video gezien: "</string>
+    <string name="video_share_middle">" in de \""</string>
+    <string name="video_share_end">\" app</string>
+    <string name="share_header">Delen</string>
+    <string name="instagram_access_token"></string>
+    <string name="pinterest_access_token"></string>
+    <string name="facebook_access_token"></string>
+    <string name="soundcloud_id"></string>
+    <string name="flickr_key"></string>
+    <string name="favorite">Favoriete</string>
+    <string name="no_favorites">Je kunt (meer) favorieten toevoegen door een item te openen en \ "favoriet \" te selecteren</string>
+    <string name="favorite_menu_delete">Verwijder</string>
+    <string name="item_del_text">U staat op het punt al uw favorieten te verwijderen</string>
+    <string name="item_del_confirmation">ik weet</string>
+    <string name="video">Videos</string>
+    <string name="playlist">afspeellijst</string>
+    <string name="live">Leven</string>
+    <string name="actionYoutube"> YOUTUBE </string>
+    <string name="background_audio">Audio afspelen</string>
+    <string name="download_permission_explaination">Om bestanden te downloaden, moet u ons toestemming verlenen voor uw opslag.\n\nNadat u ons toegang heeft verleend, kunt u doorgaan en het bestand downloaden.</string>
+    <string name="download_permission_grant">Toestemming geven</string>
+    <string name="download_unavailable">Je kunt deze inhoud niet downloaden</string>
+    <string name="download_failed">Download mislukt</string>
+    <string name="download_open_failed">Geen app om bestand af te handelen</string>
+    <string name="action_download">Download</string>
+    <string name="wallpaper">Behang</string>
+    <string name="wallpaper_success">Wallpaper is ingesteld!</string>
+
+    <!-- Connection dialogs -->
+    <string name="dialog_connection_title">Servers onbereikbaar</string>
+    <string name="dialog_connection_description">We kunnen geen verbinding maken met onze API\'s.\n\nZorg ervoor dat u uw API-sleutels en -parameters hebt ingesteld zoals gedocumenteerd!</string>
+    <string name="dialog_internet_title">Geen internet</string>
+    <string name="dialog_internet_description">Je lijkt geen internetverbinding te hebben, deze app vereist internet om de nieuwste inhoud te krijgen.\n\nJe kunt je favoriete / offline items blijven zien!</string>
+    <string name="title_activity_woo_commerce_login">Aanmelden</string>
+
+
+
+    <string name="app_terms_services">
+        Erstellen eines Kontos bedeutet, dass Sie mit unserem
+    </string>
+
+
+    <string-array name="sortBy_array">
+        <item> Neueste </item>
+        <item> A - Z </item>
+        <item> Z - A </item>
+        <item> Preis : Hoch - Tief </item>
+        <item> Preis : Tief - Hoch </item>
+        <item> Topseller </item>
+        <item> Angebote </item>
+        <item> Gefallen </item>
+    </string-array>
+
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </string>
+    <string name="card_expiry">Ausweis Ablauf</string>
+
+    <string name="delivery_time">Put time and date when you want this delivery</string>
+    <string name="flashSale"> Flash-verkoop </string>
+    <string name="upcoming"> BINNENKORT </string>
+    <string name="cannot_add_upcoming"> Je kunt het volgende item niet toevoegen aan je winkelwagentje. </string>
+    <string name="select_option">Please select at-least one option of question</string>
+    <string name="thirkural">Thirukural</string>
+    <string name="timing">Timing</string>
+    <string name="set_current_location">Set current location</string>
+    <string name="error">Api key is empty or incorrect</string>
+    <string name="enter_location">Search location</string>
+
+
+</resources>

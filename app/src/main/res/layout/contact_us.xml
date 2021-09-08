@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground" >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <FrameLayout
+                android:id="@+id/user_location_map"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+            </FrameLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textSize="14sp"
+                android:text="@string/address"
+                android:gravity="center_vertical"
+                android:textColor="@color/textColorSecondaryDark"
+                android:drawableStart="@drawable/ic_my_location"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:text="@string/mobile"
+                android:gravity="center_vertical"
+                android:textColor="@color/textColorSecondaryDark"
+                android:drawableStart="@drawable/ic_call"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:text="@string/email"
+                android:gravity="center_vertical"
+                android:textColor="@color/textColorSecondaryDark"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:layout_marginTop="6dp"/>
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:hint="@string/full_name"
+                android:inputType="textNoSuggestions"
+                android:textColor="@color/textColorSecondaryLight"
+                android:textColorHint="@color/textColorPrimaryDark"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corners_edittext_light" />
+
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:textColor="@color/textColorSecondaryLight"
+                android:textColorHint="@color/textColorPrimaryDark"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_light" />
+
+            <EditText
+                android:id="@+id/ed_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:hint="@string/your_message"
+                android:inputType="textMultiLine"
+                android:textColor="@color/textColorSecondaryLight"
+                android:textColorHint="@color/textColorPrimaryDark"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:minLines="10"
+                android:maxLines="20"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/input_field_margin"
+                android:background="@drawable/rounded_corners_edittext_light" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/messenger_send_button_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corners_button_green" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

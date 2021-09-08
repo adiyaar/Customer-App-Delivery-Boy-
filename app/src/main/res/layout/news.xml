@@ -1,0 +1,87 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_behavior="com.themescoder.androidstore.customs.AppBarFlingScrollBehavior">
+
+        <FrameLayout
+            app:layout_scrollFlags="scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/banner_height" >
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/banner_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        custom:indicator_visibility="visible"
+                        custom:auto_cycle="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true" />
+
+                    <com.daimajia.slider.library.Indicators.PagerIndicator
+                        android:id="@+id/banner_slider_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:selected_color="@color/colorPrimary"
+                        app:unselected_color="@color/windowBackground"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        style="@style/AndroidImageSlider_Indicator" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabIndicatorHeight="2dp"
+            app:tabBackground="@color/white"
+            android:background="@color/white"
+            app:tabTextColor="@color/textColorSecondaryLight"
+            app:tabIndicatorColor="@color/textColorSecondaryDark"
+            app:tabSelectedTextColor="@color/textColorSecondaryDark"
+            style="@style/MyCustomTabLayout" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/myViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <FrameLayout
+        android:id="@+id/banner_adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/banner_height">
+
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/banner_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible" />
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/banner_slider_indicator"
+        style="@style/AndroidImageSlider_Indicator_Style3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        app:selected_color="@color/colorPrimary"
+        app:unselected_color="@color/windowBackground" />
+
+
+</RelativeLayout>

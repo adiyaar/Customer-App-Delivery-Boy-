@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+
+    <!--<LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/layoutBackground"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/products_list_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Products : 0"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/filterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_filter"
+            android:tint="@color/white"
+            android:background="@color/colorAccent"
+            android:scaleType="fitCenter"
+            android:padding="10dp" />
+
+    </LinearLayout>-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/products_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/loading_bar"
+        android:layout_alignParentTop="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/empty_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_not_found"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/textColorPrimaryDark" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resetFiltersBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/empty_record"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners_button_red"
+        android:drawableStart="@drawable/ic_filter_remove_white"
+        android:drawableLeft="@drawable/ic_filter_remove_white"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/reset_filters"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/colorPrimaryLight"
+        android:indeterminateTintMode="src_in"
+        android:paddingBottom="10dp" />
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/windowBackgroundDark"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <LinearLayout
+            android:id="@+id/sort_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_sort"
+                android:tint="@color/iconsDark" />
+
+            <TextView
+                android:id="@+id/sort_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:text="@string/Newest"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondaryDark"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/layout_toggleBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/toggle_ic_view"
+            android:checked="true"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/filterBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/toggle_ic_filter"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
+

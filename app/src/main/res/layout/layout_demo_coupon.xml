@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/use_coupon_btn"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="Use"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_corners_button_green" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/use_coupon_btn">
+
+        <TextView
+            android:id="@+id/coupon_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coupon_code"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:gravity="start|center_vertical"/>
+
+        <TextView
+            android:id="@+id/coupon_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coupon_type"
+            android:maxLines="1"
+            android:textSize="13sp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginTop="2dp"
+            android:gravity="start|center_vertical"/>
+
+        <TextView
+            android:id="@+id/coupon_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coupon_amount"
+            android:maxLines="1"
+            android:textSize="13sp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginTop="2dp"
+            android:gravity="start|center_vertical"/>
+
+        <TextView
+            android:id="@+id/coupon_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coupon"
+            android:maxLines="1"
+            android:textSize="13sp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginTop="2dp"
+            android:gravity="start|center_vertical"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:id="@+id/bannerFrameHome6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha=".8"
+                    android:visibility="gone"
+                    app:shimmer_duration="900">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/placeholder" />
+                </com.facebook.shimmer.ShimmerFrameLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/home6_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical" />
+
+            <FrameLayout
+                android:id="@+id/home6_top_seller_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/home6_single_banner_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_height"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/allproducts_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:drawableStart="@drawable/ic_list"
+                android:drawableLeft="@drawable/ic_list"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/iconsLight"
+                android:text="All Products"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/home6_all_products_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_horizontal"
+    android:background="@color/windowBackground">
+
+
+    <ListView
+        android:id="@+id/currency_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:scrollbars="none"
+        android:dividerHeight="8dp"
+        android:divider="@android:color/transparent" />
+
+    <FrameLayout
+        android:id="@+id/banner_adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save_currency"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:background="@color/colorAccent" />
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--Title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:text="Validate OTP"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!--Message-->
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/veryfynumbertxt"
+        android:textSize="16sp" />
+
+    <!--Edittext-->
+    <EditText
+        android:textSize="18sp"
+        android:layout_margin="9dp"
+        android:padding="14dp"
+        android:hint="OTP Code"
+        android:textColorHint="@color/textColorPrimaryDark"
+        android:background="@drawable/outline_primary"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--Buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_no"
+            style="@style/ButtonBorder.Primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:drawableTint="@color/colorPrimary"
+            android:text="Resend" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_yes"
+            style="@style/ButtonBorder.Primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:drawableTint="@color/colorPrimary"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</LinearLayout>

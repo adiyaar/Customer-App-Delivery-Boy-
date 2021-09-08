@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/fragment_title_padding_10"
+    android:layout_margin="@dimen/margin_10"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text="Saturday"
+        android:layout_weight="1"
+        android:textSize="@dimen/dimen_15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/dimen_15sp"
+        android:textColor="@color/progressGreenLight"
+        android:text="10 AM-10PM"
+        android:id="@+id/timing_sat"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fragment_title_padding_10"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Sunday"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/progressGreenLight"
+            android:text="10 AM-10PM"
+            android:id="@+id/timing_sunday"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fragment_title_padding_10"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Monday"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/progressGreenLight"
+            android:text="10 AM-10PM"
+            android:id="@+id/timing_monday"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fragment_title_padding_10"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Tuesday"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/progressGreenLight"
+            android:text="10 AM-10PM"
+            android:id="@+id/timing_tuesday"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fragment_title_padding_10"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Wednesday"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/progressGreenLight"
+            android:text="10 AM-10PM"
+            android:id="@+id/timing_wednesday"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fragment_title_padding_10"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Thursday"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/progressGreenLight"
+            android:text="10 AM-10PM"
+            android:id="@+id/timing_thursday"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fragment_title_padding_10"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Friday"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/progressGreenLight"
+            android:text="10 AM-10PM"
+            android:id="@+id/timing_friday"
+            />
+
+    </LinearLayout>
+</LinearLayout>

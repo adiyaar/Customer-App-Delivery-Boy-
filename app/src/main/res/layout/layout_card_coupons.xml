@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="2dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:background="@color/windowBackgroundLight">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coupon"
+                android:textSize="16sp"
+                android:textColor="@color/textColorSecondaryDark" />
+
+            <ImageButton
+                android:id="@+id/coupon_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_remove_circle"
+                android:tint="@color/colorAccentRed"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/transparent" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/coupon_code"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorSecondary" />
+
+                <TextView
+                    android:id="@+id/coupon_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/coupon_code"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:textAlignment="textEnd"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/coupon_amount"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorSecondary" />
+
+                <TextView
+                    android:id="@+id/coupon_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/coupon_amount"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:textAlignment="textEnd"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/coupon_discount"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorSecondary" />
+
+                <TextView
+                    android:id="@+id/coupon_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/coupon_discount"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:textAlignment="textEnd"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/coupon_type"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorSecondary" />
+
+                <TextView
+                    android:id="@+id/coupon_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/coupon_type"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:textAlignment="textEnd"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

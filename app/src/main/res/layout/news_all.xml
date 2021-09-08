@@ -1,0 +1,46 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground" >
+
+    <TextView
+        android:id="@+id/news_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news_all"
+        android:textSize="18sp"
+        android:textColor="@color/textColorSecondary"
+        android:layout_marginStart="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/news_header"
+        android:layout_above="@+id/loading_bar" />
+
+    <TextView
+        android:id="@+id/empty_record_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_not_found"
+        android:textSize="18sp"
+        android:textColor="@color/textColorSecondaryLight"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

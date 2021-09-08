@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lg_card_cover_height"
+    android:orientation="vertical"
+    android:layout_marginStart="1dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:background="@color/white" >
+
+
+    <ImageView
+        android:id="@+id/product_cover"
+        android:layout_width="@dimen/lg_card_cover_width"
+        android:layout_height="match_parent"
+        android:src="@drawable/placeholder"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentStart="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/product_cover" >
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:minLines="3"
+            android:textSize="14sp"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/textColorSecondaryDark" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_title"
+            android:layout_above="@+id/product_card_Btn">
+
+            <TextView
+                android:id="@+id/product_price_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="13sp"
+                android:textColor="@color/colorAccentGreen"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/product_price_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="12sp"
+                android:textColor="@color/textColorSecondaryLight"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/product_price_new" />
+
+            <ToggleButton
+                android:id="@+id/product_like_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textOff=""
+                android:textOn=""
+                android:gravity="end"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_ic_favorite" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/product_card_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lg_card_btn_height"
+            android:text="@string/addToCart"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lg_card_btn_text"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_corners_button_green" />
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true" >
+
+        <ProgressBar
+            android:id="@+id/product_cover_loader"
+            android:layout_width="@dimen/lg_card_cover_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:indeterminateTintMode="src_in"
+            android:indeterminateTint="@color/colorPrimaryLight" />
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="start">
+
+            <ImageView
+                android:id="@+id/product_tag_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tagnew"
+                android:tint="@color/colorAccentRed"
+                android:rotation="90"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/product_tag_new_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/NEW"
+                android:textSize="14sp"
+                android:rotation="45"
+                android:textColor="@color/white"
+                android:paddingTop="15dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/saleLayout"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/productItemTagSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:padding="2dp"
+                android:text="SALE"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/productItemTagOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productItemTagSale"
+                android:layout_marginTop="2dp"
+                android:background="?attr/colorPrimary"
+                android:padding="2dp"
+                android:text="FEATURED"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="11sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/product_checked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/checked"
+            android:tint="@color/white"
+            android:clickable="true"
+            android:scaleType="center"
+            android:alpha="0.5"
+            android:paddingBottom="10dp"
+            android:background="@color/black" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

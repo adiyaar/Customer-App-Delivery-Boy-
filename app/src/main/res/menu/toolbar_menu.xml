@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_ic_language"
+        android:icon="@drawable/ic_language"
+        android:title="@string/actionLanguage"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/toolbar_ic_currency"
+        android:icon="@drawable/ic_action_currency"
+        android:title="@string/currency"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/toolbar_ic_search"
+        android:icon="@drawable/ic_search_menu"
+        android:title="@string/actionSearch"
+        app:showAsAction="ifRoom" />
+    <!--app:actionViewClass="android.widget.SearchView"-->
+
+    <item
+        android:id="@+id/toolbar_ic_favorite"
+        android:title="@string/favorite"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/toolbar_ic_cart"
+        android:actionLayout="@layout/layout_animated_ic_cart"
+        android:icon="@drawable/toggle_ic_cart"
+        android:title="@string/actionCart"
+        app:showAsAction="always" />
+
+</menu>

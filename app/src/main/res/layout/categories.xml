@@ -1,0 +1,45 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/categories_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categories"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_categories"
+            android:drawableTint="@color/iconsLight"
+            android:drawablePadding="12dp"
+            android:textColor="@color/textColorSecondary"
+            android:drawableLeft="@drawable/ic_categories" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_below="@+id/categories_header"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <TextView
+            android:id="@+id/empty_record_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/record_not_found"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/textColorPrimaryLight"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
